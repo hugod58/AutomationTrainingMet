@@ -1,0 +1,47 @@
+package Excercises;
+
+import java.util.Scanner;
+
+public class Excercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+						
+		System.out.println("Input a number 1");
+		Scanner input = new Scanner(System.in);
+		int number1 = input.nextInt();
+		
+		System.out.println("Input a number 2");
+		int number2 = input.nextInt();
+		
+		
+		System.out.println("Input a number 3");
+		int number3 = input.nextInt();
+		
+	
+		System.out.println("This is the greatest Number: "+ getGreatestNum(number1, number2, number3)+"");
+				
+	}
+	
+	static int getGreatestNum(int number1,int number2, int number3){
+		int number4;
+		
+		if(number1>number2)
+		{
+			number4=number1;
+		}else{
+			number4=number2;
+		}
+		
+		if(number2>number3)
+		{
+			number4=number2;
+		}else
+		{
+			number4=number3;
+		}
+		return number4;
+	}
+	
+
+}
